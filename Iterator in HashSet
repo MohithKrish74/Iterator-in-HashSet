@@ -1,0 +1,37 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in=new Scanner(System.in);
+        HashSet<Integer>set=new HashSet<Integer>();
+        System.out.print("Enter the size of the Set: ");
+        int size=in.nextInt();
+        System.out.println("Enter the elements  ");
+        for(int i=0;i<size;i++)
+        {
+            set.add(in.nextInt());
+        }
+        Iterator<Integer>iterate=set.iterator();
+        System.out.print("The elements are ");
+        while(iterate.hasNext())
+        {
+            System.out.print(iterate.next()+" ");
+        }
+
+
+    }
+
+}
+
+
+
+
+
+
+
